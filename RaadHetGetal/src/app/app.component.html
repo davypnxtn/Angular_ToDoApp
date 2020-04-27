@@ -1,0 +1,22 @@
+<div class="col-6 offset-3 mt-5">
+  <div class="card shadow">
+    <div class="card-header">
+      <div class="h1 text-center">Oefening: Raad het getal</div>
+      <div class="text-center">Geef een getal in tussen 1 en 1000 en raad het random getal</div>
+    </div>
+    <div class="card-body">
+      <div class="form">
+        <label>Jouw getal:</label>
+        <input #myInput type="text">
+      </div>
+      
+      {{result}}<br>
+      {{aantal}}
+      
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-primary col-3" (click)="check(myInput.value)">Doe een gok</button>
+        <button class="btn btn-primary col-3 ml-1" (click)="reset()">Reset</button>
+    </div>
+  </div>
+</div>
