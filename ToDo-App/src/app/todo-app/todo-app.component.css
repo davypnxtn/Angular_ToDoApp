@@ -1,0 +1,7 @@
+.nav-link {
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link.active, .nav-link:hover {
+    border-bottom-color: blue ;
+}

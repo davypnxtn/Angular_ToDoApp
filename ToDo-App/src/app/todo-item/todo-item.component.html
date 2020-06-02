@@ -1,0 +1,22 @@
+
+<table class="table">
+    <thead>
+        <tr class="d-flex">
+            <th class="col-5">ToDo</th>
+            <th class="col-5">Who</th>
+            <th class="col-2">Done</th>
+        </tr>
+    </thead>
+    <tbody>
+        <div *ngFor="let todo of todos">
+            <tr class="d-flex">
+                <td class="col-5">{{todo.naam}}</td>
+                <td class="col-5">{{todo.persoon}}</td>
+                <td class="col-2"><input type="checkbox" [checked]="todo.isDone" (change)="itemDone(todo)"></td>
+            </tr>
+             
+        </div>
+    </tbody>
+</table>
+
+

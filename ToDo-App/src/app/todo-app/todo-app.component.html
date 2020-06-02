@@ -1,0 +1,12 @@
+
+<nav class="nav navbar-light">
+    <a class="nav-link" href="#" (click)="todoView=true" >ToDo list</a>
+    <a class="nav-link" href="#" (click)="todoView=false" >Done</a>
+</nav>
+
+<div *ngIf="todoView; else doneView">
+    <app-todo-list></app-todo-list>
+</div>
+<ng-template #doneView>
+    <app-done-list></app-done-list>
+</ng-template>
