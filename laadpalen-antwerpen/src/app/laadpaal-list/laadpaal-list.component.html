@@ -1,0 +1,34 @@
+<div *ngFor="let lp of features">
+    <div class="card border shadow" routerLink="/detail/{{lp.attributes.OBJECTID}}">
+        <div class="card-header card-text">
+            <div class="d-flex">
+                <img width="50px" height="50px" src="assets/img/logooplaadpunt.png">
+                Regio: {{lp.attributes.District}}<br>
+                Adres: {{lp.attributes.Straatnaam}} {{lp.attributes.Huisnummer}}, {{lp.attributes.Postcode}} {{lp.attributes.District}}
+            </div>
+        </div>
+    </div>
+        <!-- ID: {{feature.attributes.OBJECTID}}<br>
+        Straatnaam: {{feature.attributes.Straatnaam}}<br>
+        Huisnummer: {{feature.attributes.Huisnummer}}<br>
+        District: {{feature.attributes.District}}<br>
+        Postcode: {{feature.attributes.Postcode}}<br>
+        Type aansluiting: {{feature.attributes.Type}}<br>
+        {{feature.attributes.Start_Date}}<br>
+        {{feature.attributes.End_Date}}<br>
+        GISID: {{feature.attributes.GISID}}<br>
+        Aantal: {{feature.attributes.AANTAL}}<br>
+        Parking: {{feature.attributes.PARKING}}<br>
+        Toegang: {{feature.attributes.Toegang}}<br>
+        Laadpaal/Wallbox: {{feature.attributes.Laadpaal_wallbox}}<br>
+        Vermogen: {{feature.attributes.Vermogen_kW}}Kw<br>
+        Parkeertarief: {{feature.attributes.Parkeertarief}}<br>
+        Bataalsysteem: {{feature.attributes.Betaalsysteem}}<br>
+        Prijs: {{feature.attributes.Prijs}}<br>
+        Starttarief: {{feature.attributes.Starttarief}}<br>
+        Rotatietarief: {{feature.attributes.Rotatietarief}}<br>
+        Geometry:<br>
+        x: {{feature.geometry.x}}<br>
+        y: {{feature.geometry.y}}<br><br> -->
+</div>
+{{errorMsg}}
